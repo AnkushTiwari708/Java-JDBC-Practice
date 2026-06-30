@@ -33,8 +33,8 @@ public class Type4Select {
     con = DriverManager.getConnection("jdbc:mysql://localhost:3307/db40","root","root");
         System.out.println("connected");
         st= con.createStatement();
-        String quary = "SELECT * FROM emp";
-        rs = st.executeQuery(quary);
+        String query = "SELECT * FROM emp";
+        rs = st.executeQuery(query);
         while(rs.next())
         {
             System.out.print(rs.getString(1)+"\t");
